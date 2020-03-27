@@ -23,12 +23,12 @@
         android:id="@+id/cycleImg"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
-        app:srcCompat="@drawable/ic_message_black_24dp"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/ic_message_black_24dp" />
 
     <ImageView
         android:id="@+id/webImg"
@@ -54,8 +54,8 @@
         android:id="@+id/saveImg"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
         app:srcCompat="@drawable/ic_save" />
@@ -97,5 +97,49 @@
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="@+id/webImg"
         app:layout_constraintTop_toBottomOf="@+id/webImg" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logoisen" />
+
+    <Button
+        android:id="@+id/decoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <ImageView
+        android:id="@+id/ble_button"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/decoButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/ic_bluetooth" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="BLE connexion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ble_button"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

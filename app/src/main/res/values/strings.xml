@@ -35,4 +35,31 @@
     <string name="permissions_gps_disabled">GPS désactivé</string>
     <string name="permissions_gps_enabled">GPS Activé</string>
     <string name="menu_permissions">Permissions</string>
+    <string name="deco">déconnexion</string>
+
+    <string name="nom">Nom.</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="date">Date</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="lecture">lecture</string>
+    <string name="date_picker">../../....</string>
+    <string name="acc_s_aux_informations_android">Accès aux informations Android</string>
+    <string name="contact">Contact </string>
+    <string name="buton_camera">buton_camera</string>
+    <string name="liste_contact">TextView</string>
+    <string name="contact_name">TextView</string>
+    <string name="profil_pic">TODO</string>
+    <string name="user_address">TextView</string>
+    <string name="user_mail">TextView</string>
+    <string name="type_1_pokemon">type_1_pokemon</string>
+    <string name="type_2_pokemon">type_2_pokemon</string>
+    <string name="scan">LANCER LE BLE</string>
+    <string name="bleTextFailed">bleFailed</string>
+    <string name="lancer_le_scan_ble">START BLE</string>
+    <string name="bluetooth_button" />
+    <string name="telephone_non_compatible_avec_le_ble">BLE FAILED</string>
+    <string name="_10_00">00:00</string>
+
+    <string name="_00">000</string>
+    <string name="red">red</string>
 </resources>
