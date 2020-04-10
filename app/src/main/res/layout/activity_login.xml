@@ -7,13 +7,12 @@
     tools:context=".LoginActivity">
 
 
-
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="118dp"
-        android:layout_height="157dp"
+        android:layout_width="325dp"
+        android:layout_height="192dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="todo"
         android:foregroundGravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,9 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_logoisen"
-        android:contentDescription="todo"
-        />
+        app:srcCompat="@drawable/ic_logoisen" />
 
     <TextView
         android:id="@+id/textView"

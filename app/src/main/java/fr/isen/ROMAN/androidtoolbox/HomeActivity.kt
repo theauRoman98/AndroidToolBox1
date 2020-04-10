@@ -2,22 +2,14 @@ package fr.isen.ROMAN.androidtoolbox
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.Manifest
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.content.pm.PackageManager
-import android.os.Build
-import android.os.SharedMemory
 import android.widget.Toast
-import androidx.annotation.RequiresApi
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.activity_login.*
+
 class HomeActivity : AppCompatActivity() {
 
-    var RECORD_REQUEST_CODE = 1
     private val USER_PREFS = "user_prefs"
     lateinit var sharedPreferences: SharedPreferences
 
@@ -30,7 +22,6 @@ class HomeActivity : AppCompatActivity() {
     cycleImg.setOnClickListener {
         val intent = Intent(this, CycleLife::class.java)
         startActivity(intent)
-        //Toast.makeText(applicationContext,"Identification réussi !",Toast.LENGTH_SHORT).show()
     }
 
     saveImg.setOnClickListener {
@@ -54,7 +45,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     webImg.setOnClickListener {
-        val intent = Intent(this, WebServicesActivity::class.java)
+        val intent = Intent(this, WebServiceActivity::class.java)
         startActivity(intent)
     }
 

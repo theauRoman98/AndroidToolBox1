@@ -17,7 +17,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_permissions.*
-import org.jetbrains.annotations.Contract
 
 class PermissionsActivity : AppCompatActivity() {
 
@@ -33,8 +32,6 @@ class PermissionsActivity : AppCompatActivity() {
 
         loadContacts()
 
-        //contact_list.adapter =
-        //   ArrayAdapter(this, android.R.layout.simple_list_item_1, contacts.sorted())
 
         imageView.setOnClickListener {
             showPictureDialog();

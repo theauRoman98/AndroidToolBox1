@@ -23,8 +23,6 @@ class BLEScanAdapter(private val scanResults: ArrayList<ScanResult>, private val
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BLEScanAdapter.DevicesViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_ble_cell, parent, false)
-
-
         return DevicesViewHolder(view)
     }
 

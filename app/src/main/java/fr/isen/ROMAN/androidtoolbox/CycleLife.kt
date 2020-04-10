@@ -3,7 +3,6 @@ package fr.isen.ROMAN.androidtoolbox
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_cycle_life.*
 
 class CycleLife : AppCompatActivity() {
@@ -33,13 +32,13 @@ class CycleLife : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         texte += "onStop\n"
-        CycleLifeTextView.text=texte
+        CycleLifeTextView.text = texte
     }
 
     override fun onPause() {
         super.onPause()
         texte += "onPause\n"
-        CycleLifeTextView.text=texte
+        CycleLifeTextView.text = texte
     }
 
     override fun onDestroy() {

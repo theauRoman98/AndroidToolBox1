@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class LoginActivity : AppCompatActivity() {
 
@@ -39,6 +38,8 @@ class LoginActivity : AppCompatActivity() {
             if (idUser == GOOD_ID && passwordUser == GOOD_PASSWORD) {
                 saveCredentials(idUser, passwordUser)
                 goToHome()
+            } else {
+                Toast.makeText(applicationContext, "ID ou MP invalide ", Toast.LENGTH_SHORT).show()
             }
         }
     }

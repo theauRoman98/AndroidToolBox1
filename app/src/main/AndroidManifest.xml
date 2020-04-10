@@ -15,6 +15,7 @@
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
 
     <application
         android:allowBackup="true"
@@ -23,24 +24,16 @@
         android:roundIcon="@drawable/ic_android_ios"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service
-            android:name=".BLEService"
-            android:enabled="true"
-            android:exported="true"></service>
 
-        <activity android:name=".BLEScanActivity" />
-        <activity android:name=".BLEDeviceActivity" />
-        <activity android:name=".WebServiceDetails" />
-        <activity android:name=".WebServicesActivity" />
-        <activity android:name=".WebServicesAdapter" />
-        <activity android:name=".API.Next_evolution" />
-        <activity android:name=".API.Json4Kotlin_Base" />
-        <activity android:name=".API.Pokemon" />
-        <activity android:name=".PermissionsActivity" />
-        <activity android:name=".SaveActivity" />
-        <activity android:name=".CycleLife" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.WebServiceActivity" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.BLEScanActivity" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.BLEDeviceActivity" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.WebServiceDetails" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.PermissionsActivity" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.SaveActivity" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.CycleLife" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.HomeActivity" />
+        <activity android:name="fr.isen.ROMAN.androidtoolbox.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
